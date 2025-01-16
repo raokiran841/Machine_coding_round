@@ -1,3 +1,5 @@
+package g2048;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -214,15 +216,16 @@ public class Board {
         }
     }
 
-    public void checkforwin() {
+    public boolean checkforwin() {
         for(int[] row: cell){
             for(int num: row){
                 if(num == 2048){
                     System.out.println("Won");
                     displayBoard();
-                    System.exit(0);
+                    return true;
                 }
             }
         }
+        return false;
     }
 }

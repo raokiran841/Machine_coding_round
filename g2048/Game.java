@@ -1,3 +1,5 @@
+package g2048;
+
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -13,9 +15,10 @@ class Game{
             String ch = sc.next();
             board.merge(ch);
 
-            board.checkforwin();
+            if(board.checkforwin()) break;
         }
 
-
+        sc.close();
+        
     }
 }
