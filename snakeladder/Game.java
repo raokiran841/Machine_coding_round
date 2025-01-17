@@ -104,7 +104,7 @@ public class Game{
             int totalMove = pos+move;
             String status = "";
 
-            // check valid total move, should cross actual size 100
+            // check valid total move, should not cross actual size 100
             if(totalMove > 100){
                 System.out.println(currPlayer.getName()+" rolled a "+move+", cant move from "+pos);
                 players.add(currPlayer);
