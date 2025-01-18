@@ -2,7 +2,7 @@ package snakeladder;
 
 public class Board {
     private Cell[] cell;
-    private int size;
+    //private int size;
 
     public Cell[] getCell() {
         return cell;
