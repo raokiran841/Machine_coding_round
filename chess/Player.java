@@ -3,7 +3,7 @@ package chess;
 public class Player {
     private String name;
     private Color color;
-    public Player(String name, Color color) {
+    public Player(String name, Color color, Piece[][] board) {
         this.name = name;
         this.color = color;
     }
